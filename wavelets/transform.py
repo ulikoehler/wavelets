@@ -328,7 +328,10 @@ class WaveletTransform(object):
 
     @property
     def w_k(self):
-        """Angular frequency as a function of Fourier index.
+        """Angular frequency as a function of fourier index.
+
+        If no k, returns an array of all the angular frequencies
+        calculated using the length of the data.
 
         See eq5 of TC.
 
